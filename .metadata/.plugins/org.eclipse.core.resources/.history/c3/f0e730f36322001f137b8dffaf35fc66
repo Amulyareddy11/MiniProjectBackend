@@ -1,0 +1,102 @@
+package com.example.service;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+
+import com.example.model.Customer;
+import com.example.repo.CustomerRepo;
+
+public class CustomerServiceTest {
+
+@ExtendWith(MockitoExtension.class)
+public class TeamServiceTest {
+	
+	@Mock
+	private CustomerRepo teamRepository;
+	
+	@InjectMocks
+	private CustomerService teamService;
+	
+	private Customer cust1;
+	private Customer cust2;
+	
+	@BeforeEach
+	void setUp()
+	{
+		cust1=new Customer();
+		cust1.setId(1);
+		cust1.setName("Customer A");
+		cust1.setUsername("Customer Username A");
+		cust1.setAge(20);
+		cust1.setAddress("Bangalore");
+		cust1.setEmail("CustomerA@gmail.com");
+		cust1.setPhone("9000000000");
+		cust1.setBalance(20000);
+		
+		
+		cust2=new Customer();
+		cust2.setId(2);
+		cust2.setName("Customer B");
+		cust2.setUsername("Customer Username B");
+		cust2.setAge(20);
+		cust2.setAddress("Mumbai");
+		cust2.setEmail("CustomerB@gmail.com");
+		cust2.setPhone("8000000000");
+		cust2.setBalance(30000);
+		
+		
+	}
+	
+	@Test
+	void testRead() {
+		List<Team> teams=Arrays.asList(cust1,cust2);
+		when(teamRepository.findAll()).thenReturn(teams);
+		
+		List<Team> result=teamService.read();
+		assertEquals(2,result.size());
+		assertEquals("Team A",result.get(0).getName());
+		assertEquals("Team B",result.get(1).getName());
+		
+	}
+	
+	@Test
+	void testReadOne() {
+		when(teamRepository.findById(1)).thenReturn(Optional.of(cust1));
+		Optional<Team> result=teamService.readOne(1);
+		assertTrue(result.isPresent());
+		assertEquals("Team A", result.get().getName());
+	}
+	
+	@Test
+	void testAdd()
+	{
+		teamService.add(cust1);
+		verify(teamRepository).save(cust1);
+	}
+	
+	@Test
+	void testUpdate() {
+		Team updatedTeam=new Team();
+		updatedTeam.setName("Updated Team A");
+		updatedTeam.setCaptain("Updated Captain A");
+		updatedTeam.setExChampion(false);
+		updatedTeam.setCoach("Updated Coach A");
+		when(teamRepository.findById(1)).thenReturn(Optional.of(cust1));
+		teamService.update(1,updatedTeam);
+		assertEquals("Updated Team A",cust1.getName());
+		assertEquals("Updated Captain A",cust1.getCaptain());
+		assertEquals(false,cust1.isExChampion());
+		assertEquals("Updated Coach A",cust1.getCoach());
+		verify(teamRepository).save(cust1);
+	}
+	
+	@Test
+	void testDelete() {
+		teamService.delete(1);
+		verify(teamRepository).deleteById(1);
+	}
+	
+
+}

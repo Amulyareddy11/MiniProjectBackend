@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Rerun testreadByName()" project="ABCBankingAdmin" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="com.example.controller.CustomerControllerTest" time="0.132" displayname="CustomerControllerTest" uniqueid="[engine:junit-jupiter]/[class:com.example.controller.CustomerControllerTest]">
+    <testcase name="testreadByName" classname="com.example.controller.CustomerControllerTest" time="0.132" displayname="testreadByName()" uniqueid="[engine:junit-jupiter]/[class:com.example.controller.CustomerControllerTest]/[method:testreadByName()]">
+      <error>jakarta.servlet.ServletException: Handler dispatch failed: java.lang.Error: Unresolved compilation problem: 
+	The method findByName(String) is undefined for the type CustomerService
+&#13;
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1104)&#13;
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)&#13;
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)&#13;
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)&#13;
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)&#13;
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)&#13;
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:72)&#13;
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)&#13;
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:165)&#13;
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)&#13;
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)&#13;
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)&#13;
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)&#13;
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)&#13;
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)&#13;
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)&#13;
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)&#13;
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)&#13;
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)&#13;
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)&#13;
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)&#13;
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)&#13;
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:201)&#13;
+	at com.example.controller.CustomerControllerTest.testreadByName(CustomerControllerTest.java:95)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	The method findByName(String) is undefined for the type CustomerService
+&#13;
+	at com.example.controller.CustomerController.readByName(CustomerController.java:42)&#13;
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)&#13;
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)&#13;
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)&#13;
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)&#13;
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)&#13;
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)&#13;
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)&#13;
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)&#13;
+	... 26 more&#13;
+&#13;
+</error>
+    </testcase>
+  </testsuite>
+</testrun>

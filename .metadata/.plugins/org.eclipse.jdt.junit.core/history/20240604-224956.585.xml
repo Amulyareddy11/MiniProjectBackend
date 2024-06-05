@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Rerun testAdd()" project="ABCBankingUserr" tests="1" started="1" failures="1" errors="0" ignored="0">
+  <testsuite name="com.example.controller.AccountControllerTest" time="0.331" displayname="AccountControllerTest" uniqueid="[engine:junit-jupiter]/[class:com.example.controller.AccountControllerTest]">
+    <testcase name="testAdd" classname="com.example.controller.AccountControllerTest" time="0.331" displayname="testAdd()" uniqueid="[engine:junit-jupiter]/[class:com.example.controller.AccountControllerTest]/[method:testAdd()]">
+      <failure>
+        <expected>com.example.service.AccountService#0 bean.createAccount(
+    com.example.model.Account@7962a746
+);</expected>
+        <actual>com.example.service.AccountService#0 bean.createAccount(
+    com.example.model.Account@2b90cc1
+);
+</actual>
+        Argument(s) are different! Wanted:
+com.example.service.AccountService#0 bean.createAccount(
+    com.example.model.Account@7962a746
+);
+-&gt; at com.example.service.AccountService.createAccount(AccountService.java:19)
+Actual invocations have different arguments:
+com.example.service.AccountService#0 bean.createAccount(
+    com.example.model.Account@2b90cc1
+);
+-&gt; at com.example.controller.AccountController.createAccount(AccountController.java:21)
+&#13;
+	at com.example.service.AccountService.createAccount(AccountService.java:19)&#13;
+	at com.example.controller.AccountControllerTest.testAdd(AccountControllerTest.java:95)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+
+      </failure>
+    </testcase>
+  </testsuite>
+</testrun>

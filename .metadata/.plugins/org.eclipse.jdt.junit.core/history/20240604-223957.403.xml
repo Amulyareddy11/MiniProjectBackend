@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="AccountServiceTest" project="ABCBankingUserr" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="com.example.service.AccountServiceTest" time="1.655" displayname="AccountServiceTest" uniqueid="[engine:junit-jupiter]/[class:com.example.service.AccountServiceTest]">
+    <testcase name="testRead" classname="com.example.service.AccountServiceTest" time="1.619" displayname="testRead()" uniqueid="[engine:junit-jupiter]/[class:com.example.service.AccountServiceTest]/[method:testRead()]"/>
+    <testcase name="testReadOne" classname="com.example.service.AccountServiceTest" time="0.01" displayname="testReadOne()" uniqueid="[engine:junit-jupiter]/[class:com.example.service.AccountServiceTest]/[method:testReadOne()]"/>
+    <testcase name="testDeposit" classname="com.example.service.AccountServiceTest" time="0.024" displayname="testDeposit()" uniqueid="[engine:junit-jupiter]/[class:com.example.service.AccountServiceTest]/[method:testDeposit()]"/>
+  </testsuite>
+</testrun>

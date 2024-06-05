@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="AccountServiceTest" project="ABCBankingUserr" tests="3" started="3" failures="3" errors="0" ignored="0">
+  <testsuite name="com.example.service.AccountServiceTest" time="1.559" displayname="AccountServiceTest" uniqueid="[engine:junit-jupiter]/[class:com.example.service.AccountServiceTest]">
+    <testcase name="testRead" classname="com.example.service.AccountServiceTest" time="1.536" displayname="testRead()" uniqueid="[engine:junit-jupiter]/[class:com.example.service.AccountServiceTest]/[method:testRead()]">
+      <failure>
+        <expected>Customer A</expected>
+        <actual>Account A</actual>
+        org.opentest4j.AssertionFailedError: expected: &lt;Customer A&gt; but was: &lt;Account A&gt;&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)&#13;
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)&#13;
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)&#13;
+	at com.example.service.AccountServiceTest.testRead(AccountServiceTest.java:61)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+
+      </failure>
+    </testcase>
+    <testcase name="testReadOne" classname="com.example.service.AccountServiceTest" time="0.009" displayname="testReadOne()" uniqueid="[engine:junit-jupiter]/[class:com.example.service.AccountServiceTest]/[method:testReadOne()]">
+      <failure>
+        <expected>Customer A</expected>
+        <actual>Account A</actual>
+        org.opentest4j.AssertionFailedError: expected: &lt;Customer A&gt; but was: &lt;Account A&gt;&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)&#13;
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)&#13;
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)&#13;
+	at com.example.service.AccountServiceTest.testReadOne(AccountServiceTest.java:71)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+
+      </failure>
+    </testcase>
+    <testcase name="testDeposit" classname="com.example.service.AccountServiceTest" time="0.012" displayname="testDeposit()" uniqueid="[engine:junit-jupiter]/[class:com.example.service.AccountServiceTest]/[method:testDeposit()]">
+      <failure>
+        <expected>150.0</expected>
+        <actual>20050.0</actual>
+        org.opentest4j.AssertionFailedError: expected: &lt;150.0&gt; but was: &lt;20050.0&gt;&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)&#13;
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:70)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:65)&#13;
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:889)&#13;
+	at com.example.service.AccountServiceTest.testDeposit(AccountServiceTest.java:87)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+
+      </failure>
+    </testcase>
+  </testsuite>
+</testrun>

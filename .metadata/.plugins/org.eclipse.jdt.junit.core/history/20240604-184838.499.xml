@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="CustomerControllerTest" project="ABCBankingAdmin" tests="6" started="6" failures="2" errors="0" ignored="0">
+  <testsuite name="com.example.controller.CustomerControllerTest" time="0.571" displayname="CustomerControllerTest" uniqueid="[engine:junit-jupiter]/[class:com.example.controller.CustomerControllerTest]">
+    <testcase name="testReadByName" classname="com.example.controller.CustomerControllerTest" time="0.355" displayname="testReadByName()" uniqueid="[engine:junit-jupiter]/[class:com.example.controller.CustomerControllerTest]/[method:testReadByName()]">
+      <failure>java.lang.AssertionError: No value at JSON path "$[0].name"&#13;
+	at org.springframework.test.util.JsonPathExpectationsHelper.evaluateJsonPath(JsonPathExpectationsHelper.java:302)&#13;
+	at org.springframework.test.util.JsonPathExpectationsHelper.assertValue(JsonPathExpectationsHelper.java:99)&#13;
+	at org.springframework.test.web.servlet.result.JsonPathResultMatchers.lambda$value$2(JsonPathResultMatchers.java:111)&#13;
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:214)&#13;
+	at com.example.controller.CustomerControllerTest.testReadByName(CustomerControllerTest.java:97)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+Caused by: com.jayway.jsonpath.PathNotFoundException: No results for path: $[0]['name']&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testAdd" classname="com.example.controller.CustomerControllerTest" time="0.148" displayname="testAdd()" uniqueid="[engine:junit-jupiter]/[class:com.example.controller.CustomerControllerTest]/[method:testAdd()]">
+      <failure>Wanted but not invoked:
+com.example.repo.CustomerRepo#0 bean.save(
+    "cust1"
+);
+-&gt; at com.example.controller.CustomerControllerTest.testAdd(CustomerControllerTest.java:120)
+Actually, there were zero interactions with this mock.
+&#13;
+	at com.example.controller.CustomerControllerTest.testAdd(CustomerControllerTest.java:120)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testRead" classname="com.example.controller.CustomerControllerTest" time="0.022" displayname="testRead()" uniqueid="[engine:junit-jupiter]/[class:com.example.controller.CustomerControllerTest]/[method:testRead()]"/>
+    <testcase name="testreadOne" classname="com.example.controller.CustomerControllerTest" time="0.012" displayname="testreadOne()" uniqueid="[engine:junit-jupiter]/[class:com.example.controller.CustomerControllerTest]/[method:testreadOne()]"/>
+    <testcase name="testDelete" classname="com.example.controller.CustomerControllerTest" time="0.01" displayname="testDelete()" uniqueid="[engine:junit-jupiter]/[class:com.example.controller.CustomerControllerTest]/[method:testDelete()]"/>
+    <testcase name="testUpdate" classname="com.example.controller.CustomerControllerTest" time="0.009" displayname="testUpdate()" uniqueid="[engine:junit-jupiter]/[class:com.example.controller.CustomerControllerTest]/[method:testUpdate()]"/>
+  </testsuite>
+</testrun>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Rerun testUpdate()" project="ABCBankingAdmin" tests="1" started="1" failures="1" errors="0" ignored="0">
+  <testsuite name="com.example.CustomerServiceTest" time="1.198" displayname="CustomerServiceTest" uniqueid="[engine:junit-jupiter]/[class:com.example.CustomerServiceTest]">
+    <testcase name="testUpdate" classname="com.example.CustomerServiceTest" time="1.198" displayname="testUpdate()" uniqueid="[engine:junit-jupiter]/[class:com.example.CustomerServiceTest]/[method:testUpdate()]">
+      <failure>
+        <expected>Updated Phone</expected>
+        <actual>Updated 9000000000</actual>
+        org.opentest4j.AssertionFailedError: expected: &lt;Updated Phone&gt; but was: &lt;Updated 9000000000&gt;&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)&#13;
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)&#13;
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)&#13;
+	at com.example.CustomerServiceTest.testUpdate(CustomerServiceTest.java:108)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+
+      </failure>
+    </testcase>
+  </testsuite>
+</testrun>

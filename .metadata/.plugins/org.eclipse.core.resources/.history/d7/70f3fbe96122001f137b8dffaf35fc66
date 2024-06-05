@@ -1,0 +1,78 @@
+package com.example.controller;
+import java.util.ArrayList;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
+
+import com.example.model.Customer;
+import com.example.repo.CustomerRepo;
+import com.example.service.CustomerService;
+
+@RestController
+@CrossOrigin(origins = "*")
+@RequestMapping("/cust")
+public class CustomerController {
+
+	@Autowired
+	CustomerService cr;
+	 
+	@GetMapping("/read")
+	public List<Customer> read()
+	{
+		//return cr.findAll();
+		return cr.read();
+		}
+	@GetMapping("/readname/{name}")
+	public List<Customer> readByName(@PathVariable String name)
+	{
+		return cr.findByName(name);
+	}
+	
+	@GetMapping("/readOne/{id}")
+	public Optional<Customer> readOne(@PathVariable int id)
+	{
+		return cr.findById(id);
+	}
+	
+	@PostMapping("/add")
+	public void add(@RequestBody Customer tm)
+	{
+		cr.save(tm);
+	}
+	
+	@DeleteMapping("/delete/{id}")
+	public void delete(@PathVariable int id)
+	{
+	       cr.deleteById(id);
+	}
+	
+	@PutMapping("/update/{id}")
+	public void update(@PathVariable int id, @RequestBody Customer CustomerNew)
+	{
+		Optional<Customer> CustomerOld=cr.findById(id);
+        CustomerOld.get().setName(CustomerNew.getName());
+        CustomerOld.get().setAddress(CustomerNew.getAddress());
+        CustomerOld.get().setAge(CustomerNew.getAge());
+        CustomerOld.get().setBalance(CustomerNew.getBalance());
+        CustomerOld.get().setEmail(CustomerNew.getEmail());
+        CustomerOld.get().setPassword(CustomerNew.getPassword());
+        CustomerOld.get().setPhone(CustomerNew.getPhone());
+        CustomerOld.get().setUsername(CustomerNew.getUsername());
+        cr.save(CustomerOld.get());
+	}
+
+}

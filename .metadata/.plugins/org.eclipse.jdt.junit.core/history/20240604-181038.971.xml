@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Rerun testReadByName()" project="ABCBankingAdmin" tests="1" started="1" failures="1" errors="0" ignored="0">
+  <testsuite name="com.example.controller.CustomerControllerTest" time="0.203" displayname="CustomerControllerTest" uniqueid="[engine:junit-jupiter]/[class:com.example.controller.CustomerControllerTest]">
+    <testcase name="testReadByName" classname="com.example.controller.CustomerControllerTest" time="0.203" displayname="testReadByName()" uniqueid="[engine:junit-jupiter]/[class:com.example.controller.CustomerControllerTest]/[method:testReadByName()]">
+      <failure>java.lang.AssertionError: No value at JSON path "$[1].name"&#13;
+	at org.springframework.test.util.JsonPathExpectationsHelper.evaluateJsonPath(JsonPathExpectationsHelper.java:302)&#13;
+	at org.springframework.test.util.JsonPathExpectationsHelper.assertValue(JsonPathExpectationsHelper.java:99)&#13;
+	at org.springframework.test.web.servlet.result.JsonPathResultMatchers.lambda$value$2(JsonPathResultMatchers.java:111)&#13;
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:214)&#13;
+	at com.example.controller.CustomerControllerTest.testReadByName(CustomerControllerTest.java:97)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+Caused by: com.jayway.jsonpath.PathNotFoundException: No results for path: $[1]['name']&#13;
+&#13;
+</failure>
+    </testcase>
+  </testsuite>
+</testrun>

@@ -1,0 +1,9 @@
+package com.example;
+
+public class MyTest {
+
+	public void testFindBig()
+	{
+		assertEquals(20,Calculator.findBig(10,20));
+	}
+}

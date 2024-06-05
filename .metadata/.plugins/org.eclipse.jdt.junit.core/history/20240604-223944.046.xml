@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Rerun testDeposit()" project="ABCBankingUserr" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="com.example.service.AccountServiceTest" time="1.131" displayname="AccountServiceTest" uniqueid="[engine:junit-jupiter]/[class:com.example.service.AccountServiceTest]">
+    <testcase name="testDeposit" classname="com.example.service.AccountServiceTest" time="1.131" displayname="testDeposit()" uniqueid="[engine:junit-jupiter]/[class:com.example.service.AccountServiceTest]/[method:testDeposit()]"/>
+  </testsuite>
+</testrun>

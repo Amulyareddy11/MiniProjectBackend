@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="CustomerServiceTest" project="ABCBankingAdmin" tests="5" started="5" failures="0" errors="0" ignored="0">
+  <testsuite name="com.example.service.CustomerServiceTest" time="3.303" displayname="CustomerServiceTest" uniqueid="[engine:junit-jupiter]/[class:com.example.service.CustomerServiceTest]">
+    <testcase name="testAdd" classname="com.example.service.CustomerServiceTest" time="3.17" displayname="testAdd()" uniqueid="[engine:junit-jupiter]/[class:com.example.service.CustomerServiceTest]/[method:testAdd()]"/>
+    <testcase name="testRead" classname="com.example.service.CustomerServiceTest" time="0.099" displayname="testRead()" uniqueid="[engine:junit-jupiter]/[class:com.example.service.CustomerServiceTest]/[method:testRead()]"/>
+    <testcase name="testReadOne" classname="com.example.service.CustomerServiceTest" time="0.007" displayname="testReadOne()" uniqueid="[engine:junit-jupiter]/[class:com.example.service.CustomerServiceTest]/[method:testReadOne()]"/>
+    <testcase name="testDelete" classname="com.example.service.CustomerServiceTest" time="0.006" displayname="testDelete()" uniqueid="[engine:junit-jupiter]/[class:com.example.service.CustomerServiceTest]/[method:testDelete()]"/>
+    <testcase name="testUpdate" classname="com.example.service.CustomerServiceTest" time="0.015" displayname="testUpdate()" uniqueid="[engine:junit-jupiter]/[class:com.example.service.CustomerServiceTest]/[method:testUpdate()]"/>
+  </testsuite>
+</testrun>

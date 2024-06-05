@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="CustomerControllerTest" project="ABCBankingAdmin" tests="6" started="6" failures="2" errors="0" ignored="0">
+  <testsuite name="com.example.controller.CustomerControllerTest" time="0.586" displayname="CustomerControllerTest" uniqueid="[engine:junit-jupiter]/[class:com.example.controller.CustomerControllerTest]">
+    <testcase name="testReadByName" classname="com.example.controller.CustomerControllerTest" time="0.19" displayname="testReadByName()" uniqueid="[engine:junit-jupiter]/[class:com.example.controller.CustomerControllerTest]/[method:testReadByName()]">
+      <failure>java.lang.AssertionError: Status expected:&lt;200&gt; but was:&lt;404&gt;&#13;
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:59)&#13;
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:122)&#13;
+	at org.springframework.test.web.servlet.result.StatusResultMatchers.lambda$matcher$9(StatusResultMatchers.java:637)&#13;
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:214)&#13;
+	at com.example.controller.CustomerControllerTest.testReadByName(CustomerControllerTest.java:96)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testAdd" classname="com.example.controller.CustomerControllerTest" time="0.238" displayname="testAdd()" uniqueid="[engine:junit-jupiter]/[class:com.example.controller.CustomerControllerTest]/[method:testAdd()]">
+      <failure>Wanted but not invoked:
+com.example.repo.CustomerRepo#0 bean.save(
+    Customer(id=1, Name=Customer A, Username=Customer Username A, Password=null, Age=20, Address=Bangalore, Email=CustomerA@gmail.com, Phone=9000000000, Balance=20000.0)
+);
+-&gt; at com.example.controller.CustomerControllerTest.testAdd(CustomerControllerTest.java:120)
+Actually, there were zero interactions with this mock.
+&#13;
+	at com.example.controller.CustomerControllerTest.testAdd(CustomerControllerTest.java:120)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testRead" classname="com.example.controller.CustomerControllerTest" time="0.108" displayname="testRead()" uniqueid="[engine:junit-jupiter]/[class:com.example.controller.CustomerControllerTest]/[method:testRead()]"/>
+    <testcase name="testreadOne" classname="com.example.controller.CustomerControllerTest" time="0.016" displayname="testreadOne()" uniqueid="[engine:junit-jupiter]/[class:com.example.controller.CustomerControllerTest]/[method:testreadOne()]"/>
+    <testcase name="testDelete" classname="com.example.controller.CustomerControllerTest" time="0.011" displayname="testDelete()" uniqueid="[engine:junit-jupiter]/[class:com.example.controller.CustomerControllerTest]/[method:testDelete()]"/>
+    <testcase name="testUpdate" classname="com.example.controller.CustomerControllerTest" time="0.007" displayname="testUpdate()" uniqueid="[engine:junit-jupiter]/[class:com.example.controller.CustomerControllerTest]/[method:testUpdate()]"/>
+  </testsuite>
+</testrun>
